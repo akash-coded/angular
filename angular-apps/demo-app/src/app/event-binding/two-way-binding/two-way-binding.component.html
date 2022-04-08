@@ -1,0 +1,22 @@
+<p>two-way-binding works!</p>
+
+<form action="#">
+  <div id="firstNameField">
+    <label for="firstName">First Name: </label>
+    <input
+      type="text"
+      name="firstName"
+      id="firstName"
+      [(ngModel)]="firstName"
+    />
+  </div>
+  <br />
+  <div id="lastNameField">
+    <label for="lastName">Last Name: </label>
+    <input type="text" name="lastName" id="lastName" />
+  </div>
+</form>
+
+<div id="displayInput">
+  <p>{{ firstName }}</p>
+</div>

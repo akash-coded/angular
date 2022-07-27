@@ -1,0 +1,14 @@
+<h2>WELCOME!</h2>
+<div><span>id: </span> {{ user.id }}</div>
+<div><span>name: </span> {{ user.name }}</div>
+<hr />
+<div>
+  <label for="name">Hero name: </label>
+  <input
+    type="text"
+    name="name"
+    id="name"
+    [(ngModel)]="user.name"
+    placeholder="name"
+  />
+</div>

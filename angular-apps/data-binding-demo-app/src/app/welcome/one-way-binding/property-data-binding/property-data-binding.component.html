@@ -1,0 +1,50 @@
+<div class="container">
+  <table class="table table-bordered">
+    <caption>
+      Employee Information
+    </caption>
+    <thead class="bg-primary text-white">
+      <tr>
+        <th [attr.colspan]="columnSpan">
+          <h4 class="text-center text-uppercase">Employee Information</h4>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Employee ID:</td>
+        <td>{{ id }}</td>
+      </tr>
+      <tr>
+        <td>Employee Name:</td>
+        <td>{{ name }}</td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>{{ gender }}</td>
+      </tr>
+      <tr>
+        <td>Designation</td>
+        <td>{{ designation }}</td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td>{{ location }}</td>
+      </tr>
+      <tr>
+        <td>Salary</td>
+        <td>{{ salary }}</td>
+      </tr>
+      <tr>
+        <td>Profile Image</td>
+        <td>
+          <img
+            [attr.Height]="imageHeight"
+            [attr.Width]="imageWidth"
+            [attr.src]="imagePath"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -16,7 +16,15 @@ export class WelcomeComponent implements OnInit {
     name: 'Akash',
   };
 
+  message: string = '';
+
+  imageLink: string = '../../assets/img/lake.jpg';
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  onClickMe() {
+    this.message = 'Welcome to angular programming...';
+  }
 }

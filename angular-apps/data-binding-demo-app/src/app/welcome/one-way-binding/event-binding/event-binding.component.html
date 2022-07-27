@@ -1,0 +1,26 @@
+<div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label>Enter Employee Name:</label>
+      <div class="input-group mb-3">
+        <input
+          class="form-control"
+          #newEmployee
+          (keyup.enter)="addEmployee(newEmployee.value); newEmployee.value = ''"
+          (blur)="addEmployee(newEmployee.value); newEmployee.value = ''"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-primary"
+            (click)="addEmployee(newEmployee.value)"
+          >
+            Add New
+          </button>
+        </div>
+      </div>
+    </div>
+    <ul>
+      <li *ngFor="let emp of employees">{{ emp }}</li>
+    </ul>
+  </div>
+</div>

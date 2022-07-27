@@ -1,7 +1,30 @@
-<h2>WELCOME!</h2>
+<h1 class="my-2 text-center">Welcome!</h1>
+<hr />
+
+<h2 class="text-center">One-way Data Binding</h2>
+<h3 class="my-3">Interpolation</h3>
 <div><span>id: </span> {{ user.id }}</div>
 <div><span>name: </span> {{ user.name }}</div>
+<img src="{{ imageLink }}" alt="lake" width="300" height="200" />
+<br />
+<h3 class="my-3">Property Data Binding</h3>
+<img [src]="imageLink" alt="lake" width="300" height="200" />
+<br />
+<h3 class="my-3">Attribute Data Binding</h3>
+<app-property-data-binding></app-property-data-binding>
+<br />
+<h3 class="my-3">Event Data Binding</h3>
+<h4>Example-1</h4>
+<button class="btn btn-primary" (click)="onClickMe()">Click me!</button>
+<h2>{{ message }}</h2>
+<br />
+<h4>Example-2</h4>
+<app-one-way-binding></app-one-way-binding>
 <hr />
+
+<h2 class="text-center">Two-way Data Binding</h2>
+<br />
+<h3>Example-1</h3>
 <div>
   <label for="name">Hero name: </label>
   <input
@@ -12,3 +35,6 @@
     placeholder="name"
   />
 </div>
+<br />
+<h3>Example-2</h3>
+<app-two-way-binding></app-two-way-binding>

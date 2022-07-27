@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label>First Name:</label>
+        <input type="text" class="form-control" [(ngModel)]="firstName" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label>Last Name:</label>
+        <input type="text" class="form-control" [(ngModel)]="lastName" />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label>Position:</label>
+        <input type="text" class="form-control" [(ngModel)]="position" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label>Salary:</label>
+        <input type="number" class="form-control" [(ngModel)]="salary" />
+      </div>
+    </div>
+  </div>
+  <p>
+    First Name:<strong class="text-uppercase">{{ firstName }}</strong>
+  </p>
+  <p>
+    Last Name:<strong class="text-uppercase">{{ lastName }}</strong>
+  </p>
+  <p>
+    Position:<strong class="text-uppercase">{{ position }}</strong>
+  </p>
+  <p>
+    Salary:<strong class="text-uppercase">{{ salary }}</strong>
+  </p>
+</div>

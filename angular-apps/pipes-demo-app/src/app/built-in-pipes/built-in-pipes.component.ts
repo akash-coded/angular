@@ -9,6 +9,7 @@ export class BuiltInPipesComponent implements OnInit {
   name: string = 'aKaSh';
   today: number = Date.now();
   bankBalance: number = 0;
+  percentage: number = 0.83;
 
   constructor() {}
 

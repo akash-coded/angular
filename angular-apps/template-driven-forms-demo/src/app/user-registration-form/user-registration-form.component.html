@@ -1,0 +1,80 @@
+<h1>User Registration Form</h1>
+<br />
+<form class="ml-4" #userRegForm="ngForm">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" ngModel />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          ngModel
+        />
+      </div>
+
+      <div class="form-group">
+        <div class="form-check form-check-inline">
+          <input
+            type="radio"
+            class="form-check-input"
+            name="gender"
+            id="gender_Male"
+            value="male"
+            ngModel
+          />
+          <label class="form-check-label" for="gender_Male">Male</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input
+            type="radio"
+            class="form-check-input"
+            name="gender"
+            id="gender_Female"
+            value="female"
+            ngModel
+          />
+          <label class="form-check-label" for="gender_Female">Female</label>
+        </div>
+
+        <div class="form-group mt-2">
+          <label for="paymentMode">Payment Mode</label>
+          <select class="form-control" id="paymentMode" ngModel>
+            <option>Monthly</option>
+            <option>Quarterly</option>
+            <option>Yearly</option>
+          </select>
+        </div>
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="enable_notification"
+            name="notification"
+            ngModel
+          />
+          <label class="form-check-label" for="enable_notification">
+            Enable Notification
+          </label>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="button" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<br />
+{{ userRegForm.value | json }}

@@ -1,0 +1,11 @@
+<button mat-raised-button (click)="getTrue()" color="primary">TRUE</button>
+<button mat-raised-button (click)="getFalse()" color="warn">FALSE</button>
+
+<div *ngIf="condition; else falseCondition">
+  You have selected:
+  <h2>"True"</h2>
+</div>
+<ng-template #falseCondition>
+  You have selected:
+  <h2>"False"</h2>
+</ng-template>

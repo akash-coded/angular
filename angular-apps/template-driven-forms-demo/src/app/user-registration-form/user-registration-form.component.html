@@ -1,11 +1,17 @@
 <h1>User Registration Form</h1>
 <br />
-<form class="ml-4" #userRegForm="ngForm">
+<form class="ml-4" #userRegForm="ngForm" (ngSubmit)="register(userRegForm)">
   <div class="row">
     <div class="col-md-4">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" name="name" ngModel />
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          [(ngModel)]="user.name"
+        />
       </div>
 
       <div class="form-group">
@@ -15,7 +21,7 @@
           class="form-control"
           id="email"
           name="email"
-          ngModel
+          [(ngModel)]="user.email"
         />
       </div>
 
@@ -27,7 +33,7 @@
             name="gender"
             id="gender_Male"
             value="male"
-            ngModel
+            [(ngModel)]="user.gender"
           />
           <label class="form-check-label" for="gender_Male">Male</label>
         </div>
@@ -39,14 +45,19 @@
             name="gender"
             id="gender_Female"
             value="female"
-            ngModel
+            [(ngModel)]="user.gender"
           />
           <label class="form-check-label" for="gender_Female">Female</label>
         </div>
 
         <div class="form-group mt-2">
           <label for="paymentMode">Payment Mode</label>
-          <select class="form-control" id="paymentMode" ngModel>
+          <select
+            class="form-control"
+            id="paymentMode"
+            name="paymentMode"
+            [(ngModel)]="user.paymentMode"
+          >
             <option>Monthly</option>
             <option>Quarterly</option>
             <option>Yearly</option>
@@ -60,7 +71,7 @@
             value=""
             id="enable_notification"
             name="notification"
-            ngModel
+            [(ngModel)]="user.notification"
           />
           <label class="form-check-label" for="enable_notification">
             Enable Notification
@@ -69,7 +80,7 @@
 
         <div class="form-group row">
           <div class="col-sm-10">
-            <button type="button" class="btn btn-primary">Register</button>
+            <button type="submit" class="btn btn-primary">Register</button>
           </div>
         </div>
       </div>

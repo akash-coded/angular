@@ -1,0 +1,18 @@
+<form action="#">
+  <div id="new-task-field">
+    <input
+      type="text"
+      name="new-task-input"
+      id="new-task-input"
+      placeholder="Task name..."
+      (keyup.enter)="addNewTask(newTask.value); newTask.value = ''"
+      #newTask
+    />
+    <button
+      type="button"
+      (click)="addNewTask(newTask.value); newTask.value = ''"
+    >
+      ADD TASK
+    </button>
+  </div>
+</form>

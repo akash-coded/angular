@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { forbiddenNameValidator } from '../shared/forbidden-name.directive';
 
 @Component({
   selector: 'app-form-reactive',
@@ -14,6 +15,7 @@ export class FormReactiveComponent {
       name: new FormControl('Akash', [
         Validators.required,
         Validators.minLength(4),
+        forbiddenNameValidator(/superman/i),
       ]),
     });
   }

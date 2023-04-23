@@ -74,7 +74,11 @@ class NewspaperEL implements LibraryItem {
 const authorEL = new AuthorEL(1, "George Orwell", 1903);
 const bookEL = new BookEL(1, "1984", authorEL, 1949);
 const magazineEL = new MagazineEL(1, "National Geographic", 1);
-const newspaperEL = new NewspaperEL(1, "The New York Times", "2020-01-01");
+const newspaperEL = new NewspaperEL(
+  1,
+  "The New York Times",
+  new Date().toDateString()
+);
 
 console.log(bookEL.displayInfo());
 console.log(magazineEL.displayInfo());

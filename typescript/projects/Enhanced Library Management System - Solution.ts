@@ -1,4 +1,4 @@
-interface LibraryItem {
+interface LibraryItemEL {
   id: number;
   title: string;
   displayInfo(): string;
@@ -16,7 +16,7 @@ class AuthorEL {
   }
 }
 
-class BookEL implements LibraryItem {
+class BookEL implements LibraryItemEL {
   id: number;
   title: string;
   author: AuthorEL;
@@ -39,7 +39,7 @@ class BookEL implements LibraryItem {
   }
 }
 
-class MagazineEL implements LibraryItem {
+class MagazineEL implements LibraryItemEL {
   id: number;
   title: string;
   issue: number;
@@ -55,7 +55,7 @@ class MagazineEL implements LibraryItem {
   }
 }
 
-class NewspaperEL implements LibraryItem {
+class NewspaperEL implements LibraryItemEL {
   id: number;
   title: string;
   date: string;

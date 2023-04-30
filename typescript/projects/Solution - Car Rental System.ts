@@ -92,9 +92,12 @@ class CarRental implements Car {
 const carRental = new CarRental(1, "Toyota", "Yaris", 2018);
 console.log(carRental);
 carRental.reserve(new CarUser(1, "John"), 3);
+console.log(carRental);
 carRental.reserve(new CarUser(2, "Jane"), 5);
 carRental.extendReservation(new CarUser(1, "John"), 2);
+console.log(carRental);
 carRental.extendReservation(new CarUser(2, "Jane"), 2);
 carRental.returnCar(new CarUser(1, "John"));
+console.log(carRental);
 carRental.returnCar(new CarUser(2, "Jane"));
 console.log(carRental);

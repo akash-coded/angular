@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">Mini Amazon</a>
   <button
     class="navbar-toggler"
@@ -19,6 +19,11 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/add-product">Add Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/cart">
+          Cart <span class="badge badge-light">{{ cartCount }}</span>
+        </a>
       </li>
     </ul>
   </div>

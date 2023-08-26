@@ -142,7 +142,7 @@ const store = new OSMOnlineStore();
 
 // Create a few customers
 const customer1 = new OSMCustomer(1, "John Doe", "john.doe@example.com");
-const customer2 = new OSMCustomer(2, "Jane Doe", "jane.doe@example.com");
+const customer2 = new OSMCustomer(2, "Jane Smith", "jane.smith@example.com");
 
 // Add customers to the store
 store.addCustomer(customer1);

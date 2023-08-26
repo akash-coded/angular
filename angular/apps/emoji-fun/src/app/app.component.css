@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  margin-top: 2rem;
+  color: #666;
+}
+
+.emoji-container {
+  display: flex;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.emoji:hover {
+  transform: scale(1.2);
+}

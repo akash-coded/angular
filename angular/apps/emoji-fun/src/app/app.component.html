@@ -1,0 +1,8 @@
+<h1>Emoji Fun</h1>
+<div *ngIf="selectedEmoji">
+  <h2>You selected:</h2>
+  <span class="emoji">{{ selectedEmoji }}</span>
+</div>
+<app-emoji-selector
+  (emojiSelected)="handleEmojiSelect($event)"
+></app-emoji-selector>

@@ -1,0 +1,6 @@
+<h2>Select an Emoji</h2>
+<div class="emoji-container">
+  <span *ngFor="let emoji of emojis" class="emoji" (click)="onSelect(emoji)">
+    {{ emoji }}
+  </span>
+</div>
